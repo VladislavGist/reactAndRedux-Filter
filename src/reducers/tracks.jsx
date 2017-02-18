@@ -1,4 +1,9 @@
-const initiaState = [];
+const initiaState = [
+	{
+		id: "1234",
+		name: "First track"
+	}
+];
 
 let tracks;
 export default tracks = (state = initiaState, action) => {
@@ -8,6 +13,8 @@ export default tracks = (state = initiaState, action) => {
 				...state,
 				action.payload
 			];
+		case "FETCH_TRACKS_SUCCESS":
+			return action.payload;
 		default:
 			return state;
 	}

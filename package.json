@@ -2,7 +2,7 @@
   "name": "animals",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development webpack-dev-server --debug --devtool eval-sourse-map --output-pathinfo --watch --colors --inline --hot --content-base public --port 8090 --host 0.0.0.0",
@@ -16,8 +16,10 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "react-router": "3.0.1",
+    "react-router-redux": "^4.0.8",
     "react-slick": "^0.14.5",
     "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
